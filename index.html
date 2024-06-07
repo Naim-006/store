@@ -7,7 +7,7 @@
    <style>
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-image:-webkit-linear-gradient(to right, blue, black ,white);
+    background-image: -webkit-linear-gradient(rgb(221, 221, 255), rgb(255, 251, 251) ,rgb(255, 185, 185));
     margin: 0;
     padding: 0;
     color: #343a40;
@@ -44,7 +44,8 @@ h1 {
 }
 
 .app:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    background-color: rgb(253, 229, 167);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,10 +81,12 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.2s;
+    margin: 10px;
 }
 
 .app a:hover {
     background-color: #0056b3;
+   
 }
 
 .app-details {
@@ -97,6 +100,29 @@ h1 {
     margin: 10px 5px;
     border-radius: 8px;
 }
+/* Add this media query for mobile view */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .app {
+        width: 100%;
+    }
+
+    .app-logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+    }
+
+    .app-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
    </style>
    </head>
@@ -107,88 +133,62 @@ h1 {
             <div class="app" id="app1">
                 <div class="app-header">
                    
-                    <h2>Snake Bro</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+                    <h2>Snake Bro</h2> <img src="i2.png" alt="App 1 Logo" class="app-logo">
                 </div>
-                <p>Some description about App 1.</p>
-                <a href="snake.apk" download>Download App 1</a>
+               
+                <a href="snake.apk" download>Download</a><a href="https://naim-006.github.io/curi/">Play</a>
                 <div class="app-details" id="details-app1">
-                    <p>More detailed description about App 1...</p>
+                    <p>screenshots:</p>
                     <div class="screenshots">
-                        <img src="images/app1-screen1.png" alt="App 1 Screenshot 1">
-                        <img src="images/app1-screen2.png" alt="App 1 Screenshot 2">
+                        <img src="i1.jpg" alt="App 1 Screenshot 1">
+                        <img src="i2.png" alt="App 1 Screenshot 2">
                     </div>
                 </div>
             </div>
             <div class="app" id="app2">
                 <div class="app-header">
-                    <h2>Math Quizz</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+                    <h2>Math Quizz</h2> <img src="math.png" alt="App 1 Logo" class="app-logo">
          </div>
-                <p>Some description about App 2.</p>
-                <a href="math.apk" download>Download App 2</a>
+              
+                <a href="math.apk" download>Download</a><a href="https://naim-006.github.io/mathquiz/">Play</a>
                 <div class="app-details" id="details-app2">
-                    <p>More detailed description about App 2...</p>
+                    <p>Screenshot</p>
                     <div class="screenshots">
-                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
-                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                        <img src="i3.jpg" alt="App 2 Screenshot 1">
+                        <img src="i4.jpg" alt="App 2 Screenshot 2">
                     </div>
                 </div>
             </div>
             <div class="app" id="app2">
                 <div class="app-header">
-                    <h2>Al Quran</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+                    <h2>Al Quran</h2> <img src="Q1.png" alt="App 1 Logo" class="app-logo">
          </div>
-                <p>Some description about App 2.</p>
-                <a href="quran.apk" download>Download App 2</a>
+                
+                <a href="quran.apk" download>Download</a><a href="https://naim-006.github.io/AL-QURAN/">Play</a>
                 <div class="app-details" id="details-app2">
-                    <p>More detailed description about App 2...</p>
+                    <p>screenshots</p>
                     <div class="screenshots">
-                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
-                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                        <img src="1.jpg" alt="App 2 Screenshot 1">
+                        <img src="2.jpg" alt="App 2 Screenshot 2">
                     </div>
                 </div>
             </div>
             <div class="app" id="app2">
                 <div class="app-header">
-                    <h2>Facebbok</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+                    <h2>Facebbok</h2> <img src="4.png" alt="App 1 Logo" class="app-logo">
          </div>
-                <p>Some description about App 2.</p>
-                <a href="facebook.apk" download>Download App 2</a>
+               
+                <a href="facebook.apk" download>Download</a><a href="https://naim-006.github.io/facebook/">Play</a>
                 <div class="app-details" id="details-app2">
-                    <p>More detailed description about App 2...</p>
+                    <p>screenshots</p>
                     <div class="screenshots">
-                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
-                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                        <img src="3.jpg" alt="App 2 Screenshot 1">
+                        <img src="4.png" alt="App 2 Screenshot 2">
                     </div>
                 </div>
             </div>
-            <div class="app" id="app2">
-                <div class="app-header">
-                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
-         </div>
-                <p>Some description about App 2.</p>
-                <a href="apks/app2.apk" download>Download App 2</a>
-                <div class="app-details" id="details-app2">
-                    <p>More detailed description about App 2...</p>
-                    <div class="screenshots">
-                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
-                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
-                    </div>
-                </div>
-            </div>
-            <div class="app" id="app2">
-                <div class="app-header">
-                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
-         </div>
-                <p>Some description about App 2.</p>
-                <a href="apks/app2.apk" download>Download App 2</a>
-                <div class="app-details" id="details-app2">
-                    <p>More detailed description about App 2...</p>
-                    <div class="screenshots">
-                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
-                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
-                    </div>
-                </div>
-            </div>
+          
+                
         </div>
     </div>
     <script>
