@@ -123,28 +123,7 @@ h1 {
         align-items: flex-start;
     }
 }
-#desktop-mode-message {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: none;
-            z-index: 9999;
-        }
 
-        #desktop-mode-button {
-            background-color: #007bff;
-            color: white;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
 
 
    </style>
@@ -214,26 +193,9 @@ h1 {
                 
         </div>
     </div>
-    <div id="desktop-mode-message">
-        This website is optimized for desktop viewing. Switch to desktop mode for the best experience.
-        <button id="desktop-mode-button">Switch to Desktop Mode</button>
-    </div>
+    
     <script>
-         document.addEventListener("DOMContentLoaded", function() {
-        console.log("Script loaded."); // Check if script is loaded
-
-        // Show the message if the page is viewed on a mobile device
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            document.getElementById('desktop-mode-message').style.display = 'block';
-        }
-
-        // Toggle between mobile and desktop modes when the button is clicked
-        document.getElementById('desktop-mode-button').addEventListener('click', function() {
-            // Redirect to a desktop version of the site or switch styles dynamically
-            // For simplicity, here's just an alert message
-            alert('Switching to desktop mode...');
-        });
-    });
+         
         document.addEventListener("DOMContentLoaded", function() {
     const apps = document.querySelectorAll('.app');
 
