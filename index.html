@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num Store</title>
+   <style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image:-webkit-linear-gradient(to right, blue, black ,white);
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #495057;
+    margin-bottom: 40px;
+}
+
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.app {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.app:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-logo {
+    width:100px;
+    height: 100px;
+    border-radius: 8px;
+   margin-left: 200px;
+}
+
+.app h2 {
+    color: #212529;
+    margin: 0;
+}
+
+.app p {
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+.app a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.app a:hover {
+    background-color: #0056b3;
+}
+
+.app-details {
+    display: none;
+    margin-top: 20px;
+}
+
+.screenshots img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+
+   </style>
+   </head>
+<body>
+    <div class="container">
+        <h1>Dark Store</h1>
+        <div class="app-list">
+            <div class="app" id="app1">
+                <div class="app-header">
+                   
+                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+                </div>
+                <p>Some description about App 1.</p>
+                <a href="apks/app1.apk" download>Download App 1</a>
+                <div class="app-details" id="details-app1">
+                    <p>More detailed description about App 1...</p>
+                    <div class="screenshots">
+                        <img src="images/app1-screen1.png" alt="App 1 Screenshot 1">
+                        <img src="images/app1-screen2.png" alt="App 1 Screenshot 2">
+                    </div>
+                </div>
+            </div>
+            <div class="app" id="app2">
+                <div class="app-header">
+                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+         </div>
+                <p>Some description about App 2.</p>
+                <a href="apks/app2.apk" download>Download App 2</a>
+                <div class="app-details" id="details-app2">
+                    <p>More detailed description about App 2...</p>
+                    <div class="screenshots">
+                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
+                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                    </div>
+                </div>
+            </div>
+            <div class="app" id="app2">
+                <div class="app-header">
+                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+         </div>
+                <p>Some description about App 2.</p>
+                <a href="apks/app2.apk" download>Download App 2</a>
+                <div class="app-details" id="details-app2">
+                    <p>More detailed description about App 2...</p>
+                    <div class="screenshots">
+                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
+                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                    </div>
+                </div>
+            </div>
+            <div class="app" id="app2">
+                <div class="app-header">
+                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+         </div>
+                <p>Some description about App 2.</p>
+                <a href="apks/app2.apk" download>Download App 2</a>
+                <div class="app-details" id="details-app2">
+                    <p>More detailed description about App 2...</p>
+                    <div class="screenshots">
+                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
+                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                    </div>
+                </div>
+            </div>
+            <div class="app" id="app2">
+                <div class="app-header">
+                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+         </div>
+                <p>Some description about App 2.</p>
+                <a href="apks/app2.apk" download>Download App 2</a>
+                <div class="app-details" id="details-app2">
+                    <p>More detailed description about App 2...</p>
+                    <div class="screenshots">
+                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
+                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                    </div>
+                </div>
+            </div>
+            <div class="app" id="app2">
+                <div class="app-header">
+                    <h2>App 1</h2> <img src="https://icons.veryicon.com/png/o/commerce-shopping/dream-icon-library/apps-31.png" alt="App 1 Logo" class="app-logo">
+         </div>
+                <p>Some description about App 2.</p>
+                <a href="apks/app2.apk" download>Download App 2</a>
+                <div class="app-details" id="details-app2">
+                    <p>More detailed description about App 2...</p>
+                    <div class="screenshots">
+                        <img src="images/app2-screen1.png" alt="App 2 Screenshot 1">
+                        <img src="images/app2-screen2.png" alt="App 2 Screenshot 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const apps = document.querySelectorAll('.app');
+
+    apps.forEach(app => {
+        app.addEventListener('click', function() {
+            const details = this.querySelector('.app-details');
+            const isVisible = details.style.display === 'block';
+            details.style.display = isVisible ? 'none' : 'block';
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
