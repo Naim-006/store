@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Num Store</title>
+    <link rel="icon" type="images/x-icon" href="https://ruqyahbd.org/wp-content/uploads/2018/09/nayeem-360x400.jpg.webp" />
+    <title>Naim Bro Store</title>
    <style>
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-image: -webkit-linear-gradient(rgb(221, 221, 255), rgb(255, 251, 251) ,rgb(255, 185, 185));
     margin: 0;
     padding: 0;
     color: #343a40;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
 
 h1 {
     text-align: center;
@@ -64,6 +67,7 @@ h1 {
 
 .app h2 {
     color: #212529;
+    font-size: 20px;
 
 }
 
@@ -124,12 +128,61 @@ h1 {
     }
 }
 
+#welcome-message-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10000;
+    animation: fadeInOut 4s forwards;
+}
+
+#welcome-message {
+    color: rgb(7, 8, 7);
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 100px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    border: 0px solid silver;
+    box-shadow: 0 8px 16px rgba(0,0,0,1);
+}
+
+#welcome-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+    10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    90% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+}
 
 
    </style>
    </head>
 <body>
+    <div id="welcome-message-wrapper">
+        <video id="welcome-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/7565825/7565825-hd_1366_720_25fps.mp4" type="video/mp4">
+            
+        </video>
+        <div id="welcome-message">Welcome to NAIM Bro's Store!</div>
+    </div>
+    
+
     <div class="container">
+        
+          
         <h1>Dark Store</h1>
         <div class="app-list">
             <div class="app" id="app1">
@@ -193,19 +246,24 @@ h1 {
                 
         </div>
     </div>
-    
+  
     <script>
-         
-        document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    // Show the welcome message and hide it after 4 seconds
+    const welcomeMessageWrapper = document.getElementById('welcome-message-wrapper');
+    setTimeout(() => {
+        welcomeMessageWrapper.style.display = 'none';
+    }, 5000);
+
     const apps = document.querySelectorAll('.app');
 
-    apps.forEach(app => {
-        app.addEventListener('click', function() {
-            const details = this.querySelector('.app-details');
-            const isVisible = details.style.display === 'block';
-            details.style.display = isVisible ? 'none' : 'block';
-        });
+apps.forEach(app => {
+    app.addEventListener('click', function() {
+        const details = this.querySelector('.app-details');
+        const isVisible = details.style.display === 'block';
+        details.style.display = isVisible ? 'none' : 'block';
     });
+});
 });
 
     </script>
